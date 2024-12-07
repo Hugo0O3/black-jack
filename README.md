@@ -1,4 +1,4 @@
-# Un petit BlackJack test
+# Un petit BlackJack
 
 ![Exemple d'une partie](image.png)
 
