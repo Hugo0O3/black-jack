@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Black Jack</title>
-        <link rel="stylesheet" href="blackjack.css">
-        <script src="blackjack.js"></script>
-    </head>
-
-    <body>
-        <h2>Dealer: <span id="dealer-sum"></span></h2>
-        <div id="dealer-cards">
-            <img id="hidden" src="./cards/BACK.png">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="game-container">
+        <h1>Jeu de Blackjack</h1>
+        
+        <!-- Section du joueur -->
+        <div id="player" class="player">
+            <h2>Votre main</h2>
+            <div id="player-cards" class="cards"></div>
+            <p id="player-score">Score: 0</p>
+        </div>
+        
+        <!-- Section du croupier -->
+        <div id="dealer" class="dealer">
+            <h2>Cartes du Croupier</h2>
+            <div id="dealer-cards" class="cards"></div>
+            <p id="dealer-score">Score: 0</p>
         </div>
 
-        <h2>You: <span id="your-sum"></span></h2>
-        <div id="your-cards"></div>
+        <div id="game-result"></div>
 
-        <br>
-        <button id="hit">Hit</button>
-        <button id="stay">Stay</button>
-        <p id="results"></p>
-    </body>
+        <!-- Boutons -->
+        <button id="hit-btn">Hit a card</button>
+        <button id="stand-btn">Stay</button>
+        <button id="reset-btn">Restart a game</button>
+    </section>
+
+    <script src="blackjack.js"></script>
+</body>
 </html>
